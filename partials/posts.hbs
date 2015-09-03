@@ -1,0 +1,17 @@
+{{! This is the post loop - each post will be output using this markup }}
+
+<div class="background-scroller" {{#if @blog.cover}} style="background-image: url({{@blog.cover}});" {{else}} style="background-color: #434343" {{/if}}></div>
+<div class="filter-scroller"></div>
+
+{{#foreach posts}}
+<article class="{{post_class}} col-md-4 post-item">
+    <header>
+        <h2 class="post-item-title"><a href="{{url}}">{{{title}}}</a></h2>
+        <p class="post-excerpt">{{excerpt words="20"}}</p>
+    </header>
+    <hr class="black-divider post-divider">
+</article>
+{{/foreach}}
+
+{{! Previous/next page links - displayed on every page }}
+{{pagination}}

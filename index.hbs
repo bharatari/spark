@@ -1,0 +1,31 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! The big featured header }}
+              
+{{#posts}}
+{{#if featured}}
+              
+{{! This will take precedence over the the background-scroller in the posts loop, if there is no image, it fill automatically fallback }}
+<div class="background-scroller background-scroller-top" {{#if image}} style="background-image: url({{image}});" {{/if}}></div>
+
+    <div class="featured-background">
+        <div class="container featured-block">
+            <h1 class="featured-title"><a href={{url}}>{{title}}</a></h1>
+        </div>
+    </div> 
+{{/if}}
+{{/posts}}
+
+<div class="filter-scroller"></div>  
+
+{{! The main content area on the homepage }}
+<main class="content" role="main">
+
+    {{! The tag below includes the posts loop - partials/posts.hbs }}
+    
+    <div class="container post-list">
+        {{> "posts"}}
+    </div>
+    
+</main>
