@@ -15,10 +15,9 @@
                 {{#foreach navigation}}
                     <li class="nav-link nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
                 {{/foreach}}
-                <li class="nav-link {{#if current}} nav-current {{/if}}" role="presentation"><a href="/masthead">MASTHEAD</a></li>
                 <li class="nav-link {{#if current}} nav-current {{/if}}" role="presentation"><a href="/tag/columns-casuals">COLUMNS + CASUALS</a></li>
                 <li class="nav-link {{#if current}} nav-current {{/if}}" role="presentation"><a href="/tag/lists">LISTS</a></li>
-                <li class="nav-link" role="presentation"><a class="subscribe-button" href="{{@blog.url}}/rss/">Subscribe</a></li>
+                <li class="nav-link" role="presentation"><a class="subscribe-button" href="/masthead">MASTHEAD</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 {{!--<li><input type="text" class="form-control search-box" placeholder="Search"></li>
@@ -27,5 +26,3 @@
         </div>
     </div>
 </nav>
-
-{{!----}}

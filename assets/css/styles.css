@@ -110,7 +110,7 @@
     color: white !important;
     font-family: 'Open Sans';
     text-decoration: none;
-    background-color: rgb(255, 77, 77);
+    background-color: rgb(203, 65, 65);
     margin-top: 13px;
     font-weight: 600;
     margin-top: 0px;
@@ -120,6 +120,7 @@
 .subscribe-button:hover {
     text-decoration: none;
     color: gray;
+    background-color: rgb(255, 109, 109) !important;
 }
 
 .navbar-brand {
@@ -128,6 +129,15 @@
     font-size: 28px;
     text-align: center;
     font-family: 'Roboto';
+    -webkit-transition: color 0.5s ease-out;
+    -moz-transition: color 0.5s ease-out;
+    -ms-transition: color 0.5s ease-out;
+    -o-transition: color 0.5s ease-out;
+    transition: color 0.5s ease-out;
+}
+
+.navbar-brand:hover {
+    color: #c4c4c4;
 }
 
 .logo {
@@ -160,7 +170,7 @@
 }
 
 .featured-block {
-    padding-top: 180px;
+    padding-top: 100px;
     z-index: 999;
     position: relative;
 }
@@ -178,7 +188,7 @@
 }
 
 .featured-title a {
-    font-size: 72px;
+    font-size: 70px;
     color: white;
     font-weight: 300;
     font-family: 'Open Sans';
@@ -492,14 +502,14 @@
     z-index: -50;
     background-size: cover;
     /*background-color: rgba(229, 63, 63, 0.71);*/
-    background-color: rgba(52, 52, 52, 0.61);
+    background-color: rgba(246, 76, 76, 0.61);
     background-position: center;
     opacity: inherit;
 }
 
 .content {
     padding-top: 40px;
-    margin-top: 400px;
+    margin-top: 250px;
     background-color: white;
     padding-bottom: 30px;
 }
